@@ -38,7 +38,7 @@ const logger = function() {
 
 logger();
 
-const calc = (a, b) => a + b ; 
+const calc = (a, b) => a + b ;
 
 const usdCurr = 28;
 const eurCurr = 32;
