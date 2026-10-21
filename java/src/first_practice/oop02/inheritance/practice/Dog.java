@@ -1,0 +1,13 @@
+package first_practice.oop02.inheritance.practice;
+
+public class Dog extends Animal{
+    public Dog(String name, int age) {
+        super(name, age);
+    }
+
+    @Override
+
+    public void makeNoise() {
+        System.out.println("Гав-гав!");
+    }
+}
