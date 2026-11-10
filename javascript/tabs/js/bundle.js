@@ -1,12 +1,17 @@
 /******/ (() => { // webpackBootstrap
+/******/ 	"use strict";
 /******/ 	var __webpack_modules__ = ({
 
 /***/ "./Java-JsRoadToIntership/javascript/tabs/js/modules/calc.js"
 /*!*******************************************************************!*\
   !*** ./Java-JsRoadToIntership/javascript/tabs/js/modules/calc.js ***!
   \*******************************************************************/
-(module) {
+(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
 
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
 function calc() {
     const result = document.querySelector('.calculating__result span');
     let sex, height, weight, age, ratio;
@@ -115,7 +120,7 @@ function calc() {
     getDynamicInformation('#age');
 }
 
-module.exports = calc;
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (calc);
 
 
 /***/ },
@@ -124,8 +129,12 @@ module.exports = calc;
 /*!*********************************************************************!*\
   !*** ./Java-JsRoadToIntership/javascript/tabs/js/modules/slider.js ***!
   \*********************************************************************/
-(module) {
+(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
 
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
 function slider() {
     const slides = document.querySelectorAll('.offer__slide'),
           slider = document.querySelector('.offer__slider'),
@@ -277,7 +286,7 @@ function slider() {
     });
 }
 
-module.exports = slider;
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (slider);
 
 
 /***/ },
@@ -286,8 +295,12 @@ module.exports = slider;
 /*!*******************************************************************!*\
   !*** ./Java-JsRoadToIntership/javascript/tabs/js/modules/tabs.js ***!
   \*******************************************************************/
-(module) {
+(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
 
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
 function tabs() {
     const tabs = document.querySelectorAll('.tabheader__item'),
       tabsContent = document.querySelectorAll('.tabcontent'),
@@ -336,7 +349,7 @@ function tabs() {
         }
 }
 
-module.exports = tabs;
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (tabs);
 
 
 /***/ },
@@ -345,8 +358,12 @@ module.exports = tabs;
 /*!********************************************************************!*\
   !*** ./Java-JsRoadToIntership/javascript/tabs/js/modules/timer.js ***!
   \********************************************************************/
-(module) {
+(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
 
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
 function timer() {
   const deadline = '2026-11-08';
 
@@ -399,7 +416,7 @@ function timer() {
     setClock('.timer', deadline)
 }
 
-module.exports = timer;
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (timer);
 
 
 /***/ }
@@ -437,21 +454,49 @@ module.exports = timer;
 /******/ 	}
 /******/ 	
 /************************************************************************/
+/******/ 	/* webpack/runtime/define property getters */
+/******/ 	// define getter/value functions for harmony exports
+/******/ 	__webpack_require__.d = (exports, definition) => {
+/******/ 		for(var key in definition) {
+/******/ 			if(__webpack_require__.o(definition, key) && !__webpack_require__.o(exports, key)) {
+/******/ 				Object.defineProperty(exports, key, { enumerable: true, get: definition[key] });
+/******/ 			}
+/******/ 		}
+/******/ 	};
+/******/ 	
+/******/ 	/* webpack/runtime/hasOwnProperty shorthand */
+/******/ 	__webpack_require__.o = (obj, prop) => (Object.prototype.hasOwnProperty.call(obj, prop));
+/******/ 	
+/******/ 	/* webpack/runtime/make namespace object */
+/******/ 	// define __esModule on exports
+/******/ 	__webpack_require__.r = (exports) => {
+/******/ 		Object.defineProperty(exports, Symbol.toStringTag, { value: 'Module' });
+/******/ 		Object.defineProperty(exports, '__esModule', { value: true });
+/******/ 	};
+/******/ 	
+/************************************************************************/
+let __webpack_exports__ = {};
 // This entry needs to be wrapped in an IIFE because it needs to be isolated against other modules in the chunk.
 (() => {
 /*!*************************************************************!*\
   !*** ./Java-JsRoadToIntership/javascript/tabs/js/script.js ***!
   \*************************************************************/
-window.addEventListener('DOMContentLoaded', () => {
-    const tabs = __webpack_require__(/*! ./modules/tabs */ "./Java-JsRoadToIntership/javascript/tabs/js/modules/tabs.js"),
-          timer = __webpack_require__(/*! ./modules/timer */ "./Java-JsRoadToIntership/javascript/tabs/js/modules/timer.js"),
-          slider = __webpack_require__(/*! ./modules/slider */ "./Java-JsRoadToIntership/javascript/tabs/js/modules/slider.js"),
-          calc = __webpack_require__(/*! ./modules/calc */ "./Java-JsRoadToIntership/javascript/tabs/js/modules/calc.js");
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _modules_tabs__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./modules/tabs */ "./Java-JsRoadToIntership/javascript/tabs/js/modules/tabs.js");
+/* harmony import */ var _modules_timer__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./modules/timer */ "./Java-JsRoadToIntership/javascript/tabs/js/modules/timer.js");
+/* harmony import */ var _modules_slider__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./modules/slider */ "./Java-JsRoadToIntership/javascript/tabs/js/modules/slider.js");
+/* harmony import */ var _modules_calc__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./modules/calc */ "./Java-JsRoadToIntership/javascript/tabs/js/modules/calc.js");
 
-    tabs();
-    timer();
-    slider();
-    calc();
+
+
+
+
+window.addEventListener('DOMContentLoaded', () => {
+
+    (0,_modules_tabs__WEBPACK_IMPORTED_MODULE_0__["default"])();
+    (0,_modules_timer__WEBPACK_IMPORTED_MODULE_1__["default"])();
+    (0,_modules_slider__WEBPACK_IMPORTED_MODULE_2__["default"])();
+    (0,_modules_calc__WEBPACK_IMPORTED_MODULE_3__["default"])();
 });
 
 })();
